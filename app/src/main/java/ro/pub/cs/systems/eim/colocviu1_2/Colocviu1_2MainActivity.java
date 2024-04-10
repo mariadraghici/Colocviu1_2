@@ -106,15 +106,15 @@ public class Colocviu1_2MainActivity extends AppCompatActivity {
         }
     }
 
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//        registerReceiver(messageBroadcastReceiver, intentFilter);
-//    }
-//
-//    @Override
-//    protected void onPause() {
-//        unregisterReceiver(messageBroadcastReceiver);
-//        super.onPause();
-//    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        registerReceiver(messageBroadcastReceiver, intentFilter);
+    }
+
+    @Override
+    protected void onPause() {
+        unregisterReceiver(messageBroadcastReceiver);
+        super.onPause();
+    }
 }
